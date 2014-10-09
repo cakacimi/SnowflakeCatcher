@@ -60,16 +60,16 @@ class SnowFlake
   {
    noStroke();
   fill(225);
-  ellipse(xPos, yPos, 10,10);
+  rect(xPos, yPos, 10,10);
     //your code here
   }
 
   void lookDown()
 
   {
-   if (y>0 && y<500 && get(xPos, yPos+6) ==color(255))
+   if (yPos>0 && yPos<500 && get(xPos, yPos+15) ==color(255))
      isMoving = false;
-    else if (y<500 && get(xPos, yPos+6)== color(69,160,20))
+    else if (yPos<500 && get(xPos, yPos+15)== color(69,160,20))
       isMoving=false;
     else
     isMoving= true;
@@ -79,7 +79,7 @@ class SnowFlake
   {
     noStroke();
     fill(0);
-    ellipse(xPos, yPos,12,12);
+    rect(xPos, yPos,12,12);
   }
 
  
